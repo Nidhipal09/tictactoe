@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.board, .display{
+    border: 2px solid white;
+    background-color: rgb(35, 173, 173);
+    width: 50%;
+    height: 100%;
+}
+
+.title{
+    width: 100%;
+    height: 10%;
+    border: 3px solid black;
+
+    text-align: center;
+    font-size: 40px;
+}
+
+.content{
+    width: 100%;
+    height: 90%;
+    border: 3px solid black;
+}
+
+.ttt, .history{
+    border: 3px solid black;
+    width: 75%;
+    height: 75%;
+
+    border-radius: 5px;
+ 
+    display: flex;  /* uncomment these two lines to see the change */
+    flex-direction: column;
+}
+
+.ttt{
+    margin: 70px auto;
+}
+
+
+.historyTitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+
+.ttt .row{
+    height: 34%;  /* any number greater than 33 */
+    width: 100%; 
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.row button{
+    width: 34%;
+    font-size: 80px;
+}
+
+.row button:hover{
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+
+
+
+.history{
+    overflow-y: auto;
+    margin: 0px auto;
+}
+
+.history button{
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
